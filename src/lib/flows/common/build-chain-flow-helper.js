@@ -184,7 +184,7 @@ async function checkoutProjectPullRequestFlow(
       context,
       node,
       nodeTriggeringTheJob,
-      true
+      false
     );
     if (checkoutInfo == undefined) {
       const msg = `[${node.project}] Trying to checking out ${node.project} into '${dir}'. It does not exist.`;
